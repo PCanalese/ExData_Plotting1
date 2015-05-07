@@ -7,7 +7,7 @@ The rest of this readme is the same as by R Peng.  Copies of my plots are below
 ### Plot 1
 
 
-![plot of Plot 1](figure/plot1.png.png) 
+![plot of Plot 1](figure/plot1.png) 
 
 
 ### Plot 2
