@@ -1,3 +1,31 @@
+## Notes for my submission
+Copies of the plot outputs are included in the folder named "figure"
+
+The rest of this readme is the same as by R Peng.  Copies of my plots are below
+
+
+### Plot 1
+
+
+![plot of Plot 1](figure/plot1.png.png) 
+
+
+### Plot 2
+
+![plot of Plot 2](figure/plot2.png) 
+
+
+### Plot 3
+
+![plot of Plot 3](figure/plot3.png) 
+
+
+### Plot 4
+
+![plot of Plot 4](figure/plot4.png) 
+
+
+
 ## Introduction
 
 This assignment uses data from
