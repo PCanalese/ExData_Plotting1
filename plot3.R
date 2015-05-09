@@ -6,7 +6,9 @@
 # Date is included in column 1 of the 9 columns
 
 
-
+# General approach is that each file could be run independently 
+# of course if data has already been loaded and processed 
+# these steps would not be need to be done for each plot
 
 date_col <- rep("NULL", 9)      # date_col variable to capture only date column
 date_col[1] <- "character"
@@ -49,19 +51,17 @@ raw_data$Time <- strptime(raw_data$Time, format="%d/%m/%Y %H:%M:%S")
 # convert time use POSIXlt so axis in plots all good
 
 
-png(file ="plot3.png", width = 480, height = 480)
+png(file ="plot3.png", width = 480, height = 480)     #open plot file
 
 
-plot(raw_data$Time,raw_data$Sub_metering_1,type ="l", 
+plot(raw_data$Time,raw_data$Sub_metering_1,type ="l",   #set up initial plot
      xlab="",
      ylab = "Energy sub metering", col="black")
 
-
-
-lines(raw_data$Time,raw_data$Sub_metering_2,type ="l",col="red")
-lines(raw_data$Time,raw_data$Sub_metering_3,type ="l", col="blue")
+lines(raw_data$Time,raw_data$Sub_metering_2,type ="l",col="red")   #add new lines
+lines(raw_data$Time,raw_data$Sub_metering_3,type ="l", col="blue") #for each sub 
 legend('topright', c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-       cex = 1,lty=c(1,1,1),  
-       col=c("black", "red", "blue"))
+       cex = 1,lty=c(1,1,1),            # set the legend 
+       col=c("black", "red", "blue"))   # set colours in legend
 
-dev.off()
+dev.off()                       #close the plot device

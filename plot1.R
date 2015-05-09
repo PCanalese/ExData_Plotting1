@@ -5,6 +5,10 @@
 # Note: The data file is to be loaded in the same directory as the script
 # Date is included in column 1 of the 9 columns
 
+# General approach is that each file could be run independently 
+# of course if data has already been loaded and processed 
+# these steps would not be need to be done for each plot
+
 date_col <- rep("NULL", 9)      # date_col variable to capture only date column
 date_col[1] <- "character"
 
@@ -38,8 +42,8 @@ raw_data <-  read.table("household_power_consumption.txt", header = TRUE,
 names(raw_data) <- names(Headers) # set the names in the data set
 
 png(file ="plot1.png", width = 480, height = 480)       #plot the histogram
-hist(raw_data$Global_active_power, col = "Red",
-     main = "Global Active Power",
-     xlab = "Global Active Power (kilowatts)",
+hist(raw_data$Global_active_power, col = "Red",         #set the colour
+     main = "Global Active Power",                      #set the title
+     xlab = "Global Active Power (kilowatts)",          #set the x& labels
      ylab = "kilowatts")
-dev.off()
+dev.off()     #close the plot device

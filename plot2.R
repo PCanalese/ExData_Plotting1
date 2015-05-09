@@ -5,8 +5,9 @@
 # Note: The data file is to be loaded in the same directory as the script
 # Date is included in column 1 of the 9 columns
 
-
-
+# General approach is that each file could be run independently 
+# of course if data has already been loaded and processed 
+# these steps would not be need to be done for each plot
 
 date_col <- rep("NULL", 9)      # date_col variable to capture only date column
 date_col[1] <- "character"
@@ -49,11 +50,11 @@ raw_data$Time <- strptime(raw_data$Time, format="%d/%m/%Y %H:%M:%S")
 # convert time use POSIXlt so axis in plots all good
 
 
-png(file ="plot2.png", width = 480, height = 480)
+png(file ="plot2.png", width = 480, height = 480)    #open plot file
 
-plot(raw_data$Time,raw_data$Global_active_power,type ="l",
-     xlab="",
-     ylab = "Global Active Power (kilowatts)")
+plot(raw_data$Time,raw_data$Global_active_power,type ="l",   #set line graph
+     xlab="",                                            #clear x label default
+     ylab = "Global Active Power (kilowatts)")           #set y label
 
 
-dev.off()
+dev.off()    #close the plot device

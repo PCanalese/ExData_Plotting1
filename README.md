@@ -1,5 +1,5 @@
 ## Notes for my submission
-Copies of the plot outputs are included in the folder named "figure"
+Both R files and Plots are in root directory.
 
 The rest of this readme is the same as by R Peng.  Copies of my plots are below
 
@@ -7,22 +7,22 @@ The rest of this readme is the same as by R Peng.  Copies of my plots are below
 ### Plot 1
 
 
-![plot of Plot 1](figure/plot1.png) 
+![plot of Plot 1](plot1.png) 
 
 
 ### Plot 2
 
-![plot of Plot 2](figure/plot2.png) 
+![plot of Plot 2](plot2.png) 
 
 
 ### Plot 3
 
-![plot of Plot 3](figure/plot3.png) 
+![plot of Plot 3](plot3.png) 
 
 
 ### Plot 4
 
-![plot of Plot 4](figure/plot4.png) 
+![plot of Plot 4](plot4.png) 
 
 
 
